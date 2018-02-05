@@ -89,3 +89,21 @@ label {
 	height: 50px;
 	font-size: 2rem;
 }
+
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top: 0;
+	}
+	.main {
+		width: auto;
+		margin: 0;
+	}
+	.head {
+		font-size: 3rem;
+	}
+	.loginfail {
+		font-size: 1.5rem;
+	}
+
+}

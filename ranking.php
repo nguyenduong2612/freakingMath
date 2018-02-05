@@ -10,6 +10,7 @@
 	<title>Ranking</title>
 	<link rel="stylesheet" type="text/css" href="ranking.css">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="main">
@@ -27,6 +28,7 @@
 			<?php endwhile; ?>
 			<br style="clear: both;" />
 		</div>
+		<button class="pinkbtn back" onclick="location.href='index.php'">Back</button>
 	</div>
 
 </body>

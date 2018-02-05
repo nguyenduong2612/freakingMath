@@ -45,10 +45,26 @@
 			box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
 			transition: 0.5s;
 		}
+		@media screen and (max-width: 800px) {
+			body {
+				padding-top: 0;
+			}
+			.main {
+				width: auto;
+				margin: 0;
+			}
+			span {
+				font-size: 2rem;
+			}
+			.btn {
+				margin-bottom: 50px;
+			}
+		}
 
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="main">
