@@ -17,14 +17,17 @@ body {
 
 .head {
 	display: block;
-	font-size: 3rem;
-    padding: 25px;
+	text-align: center;
+	font-size: 4rem;
+    padding: 50px 0;
 }
 
 .login {
 	font-size: 2rem;
 }
-
+form {
+	text-align: center;
+}
 label {
 	display: inline-block;
 	width: 155px;
@@ -32,14 +35,16 @@ label {
 .box {
 	margin: 10px;
 	padding: 10px 12px;
-	font-size: 16px;
+	font-size: 18px;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
 	outline: none;
 	border: 1px solid #ddd;
 	box-shadow: 0 1px 5px #c6c6c6;
 	border-radius: 3px;
 }
 .box:focus {
-	box-shadow: 0 3px 7px #c8c8c8;
+	box-shadow: 0 4px 8px #c9c9c9;
 	transition: 0.5s;
 }
 
@@ -49,7 +54,7 @@ label {
 	text-align: center;
 	width: 150px;
 	height: 50px;
-	margin-left: 27%;
+	margin: 0 calc(50% - 75px);
 	font-size: 1.7rem;
     letter-spacing: 1.5px;
     color: #fff;
@@ -69,7 +74,7 @@ label {
 	display: block;
 	width: 700px;
 	height: 50px;
-	margin-left: calc(50% - 350px);
+	margin: 4% calc(50% - 350px);
 	text-align: center;
 	font-size: 2rem;
 }
