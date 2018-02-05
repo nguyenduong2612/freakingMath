@@ -36,20 +36,25 @@ span {
 .back {
 	position: absolute;
 	top: 65px;
-    left: -30%;
+    	left: -30%;
 	font-family: 'Indie Flower', cursive;
 	font-weight: bold;
 	text-align: center;
 	width: 150px;
 	height: 50px;
 	font-size: 1.7rem;
-    letter-spacing: 1.5px;
-    color: #fff;
+    	letter-spacing: 1.5px;
+    	color: #fff;
 	border: none;
-    border-radius: 2px;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
-    outline: none;
-    background-color: #f3989b;
+    	border-radius: 2px;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    	outline: none;
+    	background-color: #f3989b;
+}
+.back:hover {
+	background-color: #f5a5a8;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
 }
 
 @media screen and (max-width: 800px) {
