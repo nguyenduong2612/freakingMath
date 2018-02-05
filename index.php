@@ -66,7 +66,7 @@
 				$('.pinkbtn').show();
 				$('.timeBar').hide();
 				if (point >= highScore) highScore = point;	
-				$('.main').html('GAME OVER<br>Point: ' + point + '<br>Highscore: ' + highScore);
+				$('.main').html('<span class="name">GAME OVER</span><br>Point: ' + point + '<br>Highscore: ' + highScore);
 				clearTimeout(timeOut);
 				clearInterval(id);
 				$('.start').text('RESTART');
