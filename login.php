@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		$_SESSION['login_user'] = $myusername;
         header("location: index.php");
    	} else {
-        echo "<span class = 'loginfail'>Your Username or Password is invalid<br>";
+        echo "<span class = 'loginfail'>Your Username or Password is invalid</span>";
     }
 }
 ?>
@@ -38,8 +38,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 			<form action = "" method = "post">
 				<label>Username  :</label><input type = "text" name = "username" class = "box" size="25"><br><br>
 				<label>Password  :</label><input type = "password" name = "password" class = "box" size="25"><br><br>
-				<input type = "submit" value = " Submit " class="submit"><br>
+				<input type = "submit" value = " Sign in " class="submit	"><br>
 			</form>
+			<span class="signup">New player? Sign up <a href="register.php">here</a></span>			
 		</div>
 	</div>
 </body>
