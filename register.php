@@ -26,7 +26,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	<title>Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="register.css">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 	<div class="main">

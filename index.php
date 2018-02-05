@@ -38,7 +38,6 @@
 			$('#username').text(user.name);
 			$('#hs').text(user.score);
 
-			var username = user.name;
     		var rdNum1;
 			var rdNum2;
 			var rdEqual;
@@ -73,7 +72,6 @@
 				point = 0;
 				//send data to database
 				var data = {
-					"username": username,
 					"highscore": highScore
 				}
 				var dataString = JSON.stringify(data);
@@ -85,14 +83,14 @@
 				})
 			}
 			function hardMode() {
-				setTime = 1500; //ms
+				setTime = 1200; //ms
 				$('#time').css('background-color', '#ff0000cc');
 				rdNum1 = Math.floor((Math.random()*25) + 11); 
 				rdNum2 = Math.floor((Math.random()*25) + 11); 
 				rdEqual = Math.floor(Math.random()*4) - Math.floor(Math.random()*4) + rdNum1 + rdNum2;
 			}
 			function normalMode() {
-				setTime = 2000; //ms
+				setTime = 1600; //ms
 				rdNum1 = Math.floor((Math.random()*15) + 5); 
 				rdNum2 = Math.floor((Math.random()*15) + 5); 
 				rdEqual = Math.floor(Math.random()*3) - Math.floor(Math.random()*3) + rdNum1 + rdNum2;
@@ -138,7 +136,8 @@
 			$('.timeBar').hide();
 			
 			$('.start').click(function(){
-				setTime = 2500; //ms
+				setTime = 2000; //ms
+				changeBgn();
 				$('.greenbtn').show();
 				$('.pinkbtn').hide();
 				$('.timeBar').show();

@@ -8,6 +8,7 @@
 			box-sizing: border-box;
 		}
 		body {
+			background: linear-gradient(30deg,rgba(194, 255, 197, 0.7) 10% , rgba(154, 213, 255, 0.7) 50%);
 			font-family: 'Indie Flower', cursive;
 			font-weight: bold;
 		}
