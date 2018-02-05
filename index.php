@@ -38,6 +38,7 @@
 			$('#username').text(user.name);
 			$('#hs').text(user.score);
 
+			var username = user.name;
     		var rdNum1;
 			var rdNum2;
 			var rdEqual;
@@ -72,13 +73,14 @@
 				point = 0;
 				//send data to database
 				var data = {
+					"username": username,
 					"highscore": highScore
 				}
 				var dataString = JSON.stringify(data);
 				console.log(dataString);
 				$.ajax({
 					type: 'POST',
-					url: 'logout.php',
+					url: 'send_data.php',
 					data: {'data': dataString}
 				})
 			}
