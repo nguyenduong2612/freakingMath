@@ -70,6 +70,17 @@
 				clearInterval(id);
 				$('.start').text('RESTART');
 				point = 0;
+				//send data to database
+				var data = {
+					"highscore": highScore
+				}
+				var dataString = JSON.stringify(data);
+				console.log(dataString);
+				$.ajax({
+					type: 'POST',
+					url: 'logout.php',
+					data: {'data': dataString}
+				})
 			}
 			function hardMode() {
 				setTime = 1500; //ms
@@ -116,9 +127,7 @@
 				var color = '#';
 				var hexCode = ['CCB8D1', 'B2E3E8', 'F5B3B4', 'CCA772', 'D94330', 'FADDAF', 'EB712F', 'FFB6C1', '97FFFF', 'AB82FF'];
 				color += hexCode[Math.floor(Math.random() * hexCode.length)];
-				/*$('body').css({background: color});*/
 				$('body').animate({ backgroundColor: color}, 500);
-				console.log(color);
 			}
 
 			//main
@@ -157,9 +166,6 @@
 					gameOver();
 				}
 			});
-			/*$('.logout').click(function(){
-
-			});*/
 		});
 
 	</script>
