@@ -43,11 +43,11 @@ label {
 	font-weight: bold;
 	outline: none;
 	border: 1px solid #ddd;
-	box-shadow: 0 1px 5px #c6c6c6;
+	box-shadow: 0 1px 5px #929292;
 	border-radius: 3px;
 }
 .box:focus {
-	box-shadow: 0 4px 8px #c9c9c9;
+	box-shadow: 0 4px 8px #565656;
 	transition: 0.5s;
 }
 

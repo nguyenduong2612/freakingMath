@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(30deg, rgba(194, 255, 197, 0.7) 10% , rgba(154, 213, 255, 0.7) 50%);
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+}
+
+.main {
+	width: 700px;
+	height: 100vh;
+	margin-left: calc(50% - 350px);
+}
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: 4rem;
+	padding-top: 30px;
+}
+.thead {
+	border-bottom: #000 solid 3px;
+	padding-top: 30px;
+}
+span {
+	display: inline-block;
+	font-size: 3rem;
+	float: left;
+	width: 50%;
+}

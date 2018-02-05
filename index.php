@@ -22,6 +22,7 @@
 		<div id="time"></div>
 	</div>
 
+	<button class="pinkbtn ranking" onclick="location.href='ranking.php'">RANKING</button>
 	<button class="pinkbtn start">START</button>
 	<button class="pinkbtn logout" onclick="location.href='logout.php'">LOGOUT</button>
 	<div class="main">
