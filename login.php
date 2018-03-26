@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 	<div class="loading">
 		<span class="intro">FREAKING MATH</span>
-		<span class="credit">Group 22 's project</span>
+		<span class="credit">Group 1 's project</span>
 	</div>
 	<div class="main">
 		<img src="sub_right_chara4.png" width="260" height="369">
@@ -53,9 +53,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	</div>
 
 	<script>
-		$(".loading").delay(2500).fadeOut(1000);
+		$(".loading").delay(1200).fadeOut(800);
 		$(".login").hide();
-		$(".login").delay(3000).fadeIn(1500);
+		$(".login").delay(1600).fadeIn(800);
 	</script>
 </body>
 </html>
