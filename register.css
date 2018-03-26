@@ -5,10 +5,25 @@
 }
 
 body {
+	position: relative;
 	background: linear-gradient(30deg,rgba(194, 255, 197, 0.7) 10% , rgba(154, 213, 255, 0.7) 50%);
 	background-size: 145%;
 	font-family: 'Indie Flower', cursive;
 	font-weight: bold;
+	overflow: hidden;
+}
+
+
+img {
+    position: absolute;
+    right: -16px;
+    bottom: -35px;
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transform-origin: right bottom;
+}
+img:hover {
+	right: 0;
+	bottom: 0;
 }
 
 .main {
@@ -87,6 +102,10 @@ label {
 @media screen and (max-width: 800px) {
 	body {
 		padding-top: 0;
+		overflow: auto;
+	}
+	img {
+		display: none;
 	}
 	.main {
 		width: auto;

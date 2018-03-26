@@ -10,14 +10,50 @@ body {
 	position: relative;
 	font-family: 'Indie Flower', cursive;
 	font-weight: bold;
+	overflow: hidden;
 }
+
+img {
+    position: absolute;
+    right: -16px;
+    bottom: -35px;
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transform-origin: right bottom;
+}
+img:hover {
+	right: 0;
+	bottom: 0;
+}
+
 
 .main {
 	width: 700px;
-	height: 100vh;
 	margin-left: calc(50% - 350px);
 }
-
+.loading {
+	position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(30deg, #FFE98A , #D74177);
+}
+.loading .intro {
+	display: block;
+	text-align: center;
+	font-size: 8rem;
+	padding-top: 10%;
+	color: #fff;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.loading .credit {
+	display: block;
+	text-align: center;
+	font-size: 3rem;
+	color: #fff;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
 .head {
 	display: block;
 	text-align: center;
@@ -95,6 +131,7 @@ label {
 @media screen and (max-width: 800px) {
 	body {
 		padding-top: 0;
+		overflow: auto;
 	}
 	.main {
 		width: auto;
@@ -105,6 +142,9 @@ label {
 	}
 	.loginfail {
 		font-size: 1.5rem;
+	}
+	img {
+		display: none;
 	}
 
 }
